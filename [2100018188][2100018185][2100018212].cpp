@@ -9,10 +9,46 @@ KELAS		: D
 NIM		: 2100018185
 */
 #include <iostream>
-using namespace std;
+#include <math.h>
 
-int main(){
-cout << "hello world";
-return 0;
+using namespace std ;
+int tambah(int x, int y){
+	int hasil = x+y;cout<<endl;
+	cout<<"HASILNYA = "<<hasil;
+	return hasil;
 }
+int kurang(int x, int y){
+	int hasil = x-y	;cout<<endl;
+	cout<<"HASILNYA = "<<hasil;
+	return hasil;
+}
+float bagi(float x, float y){
+	float hasil = x/y	;cout<<endl;
+	cout<<"HASILNYA = "<<hasil;
+	return hasil;
+}
+int kali(int x, int y){
+	int hasil = x*y	;cout<<endl;
+	cout<<"HASILNYA = "<<hasil;	
+	return hasil;
+}
+
+void pangkat(int x, int y){
+	int hasil = pow(x,y) ;
+	cout<<endl<<endl ;
+	cout<<"Hasilnya = "<<hasil ;	
+}
+void akar(float x){
+	float hasil = sqrt(x) ;
+	cout<<"Akar dari "<<x<<" = "<<hasil ;	
+}
+
+int main()
+{
+	int pilihan, n, hasil,i ;
+	float total ; 
+	int a,b ;
+	float c,d;
+	cout<<"SELAMAT DATANG DI PROGRAM KALKULATOR SEDERHANA"<<endl<<endl<<endl ;
+	
 
