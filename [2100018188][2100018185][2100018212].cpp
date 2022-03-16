@@ -38,39 +38,49 @@ int kali(int x, int y){
 
 int main()
 {
-	int pilihan, n, hasil,i ;
-	float total ; 
-	int a,b ;
-	float c,d;
-	cout<<"SELAMAT DATANG DI PROGRAM KALKULATOR SEDERHANA"<<endl<<endl<<endl;
-}
-
-int main()
-{
-	int pilihan, n, hasil,i ;
-	float total ; 
-	int a,b ;
-	float c,d;
-	cout<<"SELAMAT DATANG DI PROGRAM KALKULATOR SEDERHANA"<<endl<<endl<<endl ;
-	cout<<"||====================================================||"<<endl ;
-	cout<<"||     SILAHKAN PILIH PERINTAH YANG ANDA INGINKAN     ||"<<endl ;
-	cout<<"||                                                    ||"<<endl ;
-	cout<<"||  1. Pertambahan ( + )                              ||"<<endl ;
-	cout<<"||  2. Pengurangan ( - )                              ||"<<endl ;
-	cout<<"||  3. Perkalian   ( x )                              ||"<<endl ;
-	cout<<"||  4. Pembagian   ( : )                              ||"<<endl ;
-	cout<<"||                                                    ||"<<endl ;
-	cout<<"||====================================================||"<<endl<<endl<<endl ;
+	int pilihan;
+	float a, b, total;
+	cout<<"SELAMAT DATANG DI PROGRAM KALKULATOR SEDERHANA"<<endl<<endl;
+	cout<<"||====================================================||"<<endl;
+	cout<<"||     SILAHKAN PILIH PERINTAH YANG ANDA INGINKAN     ||"<<endl;
+	cout<<"||                                                    ||"<<endl;
+	cout<<"||  1. Pertambahan ( + )                              ||"<<endl;
+	cout<<"||  2. Pengurangan ( - )                              ||"<<endl;
+	cout<<"||  3. Perkalian   ( x )                              ||"<<endl;
+	cout<<"||  4. Pembagian   ( : )                              ||"<<endl;
+	cout<<"||                                                    ||"<<endl;
+	cout<<"||====================================================||"<<endl<<endl ;
 	cout<<"MASUKAN PERINTAH YANG ANDA INGINKAN = " ;
 	cin>>pilihan ;
-	cout<<endl<<endl ;
+	cout<<endl;
 	
-	if(pilihan == 1)
-	{ 
+	if ((pilihan > 0) && (pilihan < 5)) {
 		cout<<"Masukan nilai A = ";
 		cin>>a;
 		cout<<"Masukan nilai B = ";
 		cin>>b;
+	}
+	
+	if(pilihan == 1)
+	{ 
 		tambah(a,b);
-	}	
-
+	}
+	else if(pilihan == 2)
+	{ 
+		kurang(a,b);
+	}
+	else if(pilihan == 3)
+	{ 
+		kali(a,b);
+	}
+	else if(pilihan == 4)
+	{ 
+		bagi(a,b);
+	}
+	else
+	{
+		cout<<"PILIHAN TIDAK ADA DI MENU" ;
+		cout<<endl<<endl ;
+	}
+	return 0 ;
+}
