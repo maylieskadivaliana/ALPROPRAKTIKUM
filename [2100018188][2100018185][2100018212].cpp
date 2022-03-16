@@ -39,7 +39,7 @@ int kali(int x, int y){
 int main()
 {
 	int pilihan;
-	float a, b, total;
+	float a, b;
 	cout<<"SELAMAT DATANG DI PROGRAM KALKULATOR SEDERHANA"<<endl<<endl;
 	cout<<"||====================================================||"<<endl;
 	cout<<"||     SILAHKAN PILIH PERINTAH YANG ANDA INGINKAN     ||"<<endl;
