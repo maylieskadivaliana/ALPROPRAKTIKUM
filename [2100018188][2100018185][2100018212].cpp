@@ -35,15 +35,6 @@ int kali(int x, int y){
 	return hasil;
 }
 
-void pangkat(int x, int y){
-	int hasil = pow(x,y) ;
-	cout<<endl<<endl ;
-	cout<<"Hasilnya = "<<hasil ;	
-}
-void akar(float x){
-	float hasil = sqrt(x) ;
-	cout<<"Akar dari "<<x<<" = "<<hasil ;	
-}
 
 int main()
 {
